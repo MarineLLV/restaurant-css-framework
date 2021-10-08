@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
     <script src="/JS/bootstrap.bundle.min.js" defer></script>
-    <title>Chez Marine | Produits</title>
+    <title>Chez Marine | Galettes</title>
 </head>
 <body>
     <header class="navbar navbar-expand-md navbar-light bg-light px-3">
@@ -23,7 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="/a-propos.html">À propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="/carte.html">Carte</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
                             href="/galerie.html">Galerie</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/pagination-1.html">Galettes</a></li>
@@ -31,10 +31,40 @@
                             <li><a class="dropdown-item" href="#">Desserts</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link active" href="/produits.html">Produits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/produits.html">Produits</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
                 </ul>
             </nav>
     </header>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+            <li class="page-item active"><a class="page-link" href="/pagination-1.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pictures -->
+    <div class="container">
+        <div class="row">
+            <h1 class="display-3"> Les galettes</h1>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <img src="/Assets/galette-1.png" alt="" class="img-fluid rounded img-thumbnail">
+            </div>
+            <div class="col-12 col-lg-4">
+                <img src="/Assets/galette-2.png" alt="" class="img-fluid rounded img-thumbnail">
+            </div>
+            <div class="col-12 col-lg-4">
+                <img src="/Assets/galette-3.png" alt="" class="img-fluid rounded img-thumbnail">
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
