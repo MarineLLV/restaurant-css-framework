@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
 <body>
     <header class="navbar navbar-expand-md navbar-light bg-light px-3">
         <!-- NavBar-->
-        <a href="/index.html" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
             <img src="/Assets/logo-chez-marine.svg" alt="Logo chezMarine" width="70px" height="auto">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
@@ -21,21 +21,56 @@
             <nav>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/a-propos.html">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/carte.html">Carte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            href="/galerie.html">Galerie</a>
+                            href="galerie.html">Galerie</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/pagination-1.html">Galettes</a></li>
-                            <li><a class="dropdown-item" href="#">Crêpes</a></li>
-                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                            <li><a class="dropdown-item" href="les-galettes.html">Galettes</a></li>
+                            <li><a class="dropdown-item" href="les-crepes.html">Crêpes</a></li>
+                            <li><a class="dropdown-item" href="les-desserts.html">Desserts</a></li>
+                            <li><a class="dropdown-item" href="les-boissons.html">Desserts</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/produits.html">Produits</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </div>    
+    <!-- bouton "se connecter"-->
+       <button type="submit" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#connect">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+          </svg>
+       </button>
     </header>
+
+
+    <!-- offcanvas -->
+    <section class="offcanvas offcanvas-end" id="connect">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">Se connecter</h2>
+            <!-- bouton pour faire disparaître l'offcanvas-->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nom d'utilisateur</label>
+                    <input type="text" class="form-control" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="rememberMe" />
+                    <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+                </div>
+                <button class="btn btn-primary">Se connecter</button>
+            </form>
+        </div>
+    </section>
 
     <main class="container-fluid my-3">
         <div class="row">

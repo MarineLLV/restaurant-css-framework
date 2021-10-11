@@ -11,8 +11,8 @@
 <body>
     <header class="navbar navbar-expand-md navbar-light bg-light px-3">
         <!-- NavBar-->
-        <a href="/index.html" class="navbar-brand">
-            <img src="/Assets/logo-chez-marine.svg" alt="Logo chezMarine" width="70px" height="auto">
+        <a href="index.html" class="navbar-brand">
+            <img src="Assets/logo-chez-marine.svg" alt="Logo chezMarine" width="70px" height="auto">
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
             <span class="navbar-toggler-icon"></span>
@@ -21,20 +21,69 @@
             <nav>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/a-propos.html">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/carte.html">Carte</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="a-propos.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            href="/galerie.html">Galerie</a>
+                            href="galerie.html">Galerie</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/pagination-1.html">Galettes</a></li>
-                            <li><a class="dropdown-item" href="#">Crêpes</a></li>
-                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                            <li><a class="dropdown-item" href="les-galettes.html">Galettes</a></li>
+                            <li><a class="dropdown-item" href="les-crepes.html">Crêpes</a></li>
+                            <li><a class="dropdown-item" href="les-desserts.html">Desserts</a></li>
+                            <li><a class="dropdown-item" href="les-boissons.html">Desserts</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/produits.html">Produits</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </div>    
+    <!-- bouton "se connecter"-->
+       <button type="submit" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#connect">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+          </svg>
+       </button>
     </header>
+
+
+    <!-- offcanvas -->
+    <section class="offcanvas offcanvas-end" id="connect">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title">Se connecter</h2>
+            <!-- bouton pour faire disparaître l'offcanvas-->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Nom d'utilisateur</label>
+                    <input type="text" class="form-control" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" id="rememberMe" />
+                    <label class="form-check-label" for="rememberMe">Se souvenir de moi</label>
+                </div>
+                <button class="btn btn-primary">Se connecter</button>
+            </form>
+        </div>
+    </section>
+
+
+    <div class="col-12">
+        Enghien - samedi 8h-13h30
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2527.4131590669585!2d4.038151!3d50.6937171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3b17fd07f1d71%3A0x9fb7d96264b86c87!2sPl.%20Pierre%20Delannoy%2C%207850%20Enghien!5e0!3m2!1sfr!2sbe!4v1633943565757!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-12">
+        Silly - dimanche 8h-13h
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2529.820442565604!2d3.920763515305348!3d50.64902578091829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3acfbcba3d60b%3A0xa7137c598259edf3!2sPl.%20Communale%2C%207830%20Silly!5e0!3m2!1sfr!2sbe!4v1633943994936!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-12">
+        Soignies - mardi 8h30-13h30
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.5706886738626!2d4.066242615302592!3d50.57934528595056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c24c9d0e19f233%3A0xf73477ef148a1b0c!2sPl.%20Verte%2C%207060%20Soignies!5e0!3m2!1sfr!2sbe!4v1633944565800!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    </div>
+
 </body>
 </html>

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="/JS/bootstrap.bundle.min.js" defer></script>
-    <title>Chez Marine | Produits</title>
+    <title>Chez Marine | Desserts</title>
 </head>
 <body>
     <header class="navbar navbar-expand-md navbar-light bg-light px-3">
@@ -23,13 +24,13 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
                     <li class="nav-item"><a class="nav-link" href="carte.html">Carte</a></li>
-                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            href="galerie.html">Galerie</a>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                            href="#">Galerie</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="les-galettes.html">Galettes</a></li>
                             <li><a class="dropdown-item" href="les-crepes.html">Crêpes</a></li>
                             <li><a class="dropdown-item" href="les-desserts.html">Desserts</a></li>
-                            <li><a class="dropdown-item" href="les-boissons.html">Desserts</a></li>
+                            <li><a class="dropdown-item" href="les-boissons.html">Boissons</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="produits.html">Produits</a></li>
@@ -73,6 +74,62 @@
     </section>
 
 
+    <!-- Pictures -->
+    <div class="container">
+        <h1 class="display-1 text-center my-5">Les desserts</h1>  
+        
+        <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/kouign-amann.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-1">Dessert 1</h2>
+                <p>Un vrai délice !</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/crepiere.png" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-1">Dessert 2</h2>
+                <p>Un vrai délice !</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/beurre-sale.png" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-1">Dessert 3</h2>
+                <p>Un vrai délice !</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    
+
+        <!-- Pagination -->
+        <nav class="my-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="les-crepes.html">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="les-galettes.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="les-crepes.html">2</a></li>
+                <li class="page-item active"><a class="page-link" href="les-desserts.html">3</a></li>
+                <li class="page-item"><a class="page-link" href="les-boissons.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="les-boissons.html">&raquo;</a></li>
+            </ul>
+        </nav>
 
 </body>
 </html>
