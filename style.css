@@ -22,6 +22,10 @@ header {
     background-color: whitesmoke;
 }
 
+#contactText {
+    background-color:lightgrey;
+}
+
 form {
     background-color:lightgrey;
 }
