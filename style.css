@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -9,7 +10,20 @@ body {
 }
 
 header {
-    background-color: rgba(125, 197, 255, 0.801);
+    background-color: rgb(125, 196, 255);
+}
+
+#welcome {
+    background-color: rgba(5, 48, 97, 0.938);
+    color: whitesmoke;
+}
+
+#welcome h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+div h1, div h2 {
+    font-family: 'Indie Flower', cursive;
 }
 
 .btn {
@@ -22,6 +36,14 @@ header {
     background-color: whitesmoke;
 }
 
+.cardProducts {
+    background-color: rgba(5, 48, 97, 0.938);
+}
+
+figcaption {
+    color: rgb(255, 255, 255);
+}
+
 #contactText {
     background-color:lightgrey;
 }
@@ -31,5 +53,5 @@ form {
 }
 
 footer {
-    background-color: rgba(125, 197, 255, 0.801);
+    background-color: rgb(125, 196, 255);
 }
