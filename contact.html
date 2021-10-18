@@ -74,20 +74,25 @@
       </form>
     </div>
   </section>
-  <main class="container-fluid my-3">
-    <div class="row">
-      <section class="col-12 col-md-6 mb3 p-3" id="contactText">
-        <h1 class="display-3">Me contacter</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem provident beatae voluptate ea
-          molestiae!</p>
+  <!-- Content -->
+  <div class="container-fluid my-3">
+    <div class="row mx-auto flex-wrap-reverse justify-content-around">
+      <section class="col-12 col-md-4 p-3 my-3 mx-auto text-center blueContainer blueBorder">
+        <div>
+          <h1 class="display-5">Me contacter</h1>
+          <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem provident beatae
+            voluptate ea
+            molestiae!</p>
+          <img src="./Assets/drapeau-breton.jpg" class="d-block img-fluid rounded-3" alt="drapeau breton">
+        </div>
       </section>
-      <section class="col-12 col-md-6">
-        <form action="" class="p-3">
-          <h2 class="display-3"> Formulaire de contact</h2>
+      <!-- Formulaire -->
+      <section class="col-12 col-md-8 p-3 my-3 mx-auto greyContainer blueBorder">
+        <form action="">
+          <h1 class="display-5"> Formulaire de contact</h1>
           <fieldset>
             <legend>Informations personnelles</legend>
             <div class="row">
-              <!-- Responsive-->
               <div class="col-12 col-lg-6">
                 <div class="mb-3 form-floating">
                   <input type="text" name="fName" id="fName" class="form-control" placeholder="Votre prénom">
@@ -131,7 +136,6 @@
             <legend> Vos préférences</legend>
             <div class="mb-3">
               <div class="form-check form-switch">
-                <!-- Nouveauté BS5-->
                 <input type="checkbox" name="newsletter" id="newsletter" value="true" class="form-check-input">
                 <label class="form-check-label" for="newsletter">Souhaitez-vous recevoir ma newsletter ?</label>
               </div>
@@ -164,9 +168,8 @@
             </svg> Envoyer</button>
         </form>
       </section>
-      </nav>
     </div>
-  </main>
+  </div>
   <!-- Footer -->
   <footer>
     <section>
@@ -231,7 +234,7 @@
                 </svg>
                 <a href="mailto:info@chez-marine.com" class="link-dark ms-1">info@chez-marine.com</a>
               </div>
-              <div class="d-inline-flex">
+              <div class="d-inline-flex pt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                   class="bi bi-telephone" viewBox="0 0 16 16">
                   <path
@@ -245,7 +248,7 @@
       </div>
     </section>
     <!-- Copyright -->
-    <div class="text-center p-1" style="background-color: rgb(255, 255, 255);">
+    <div class="text-center p-1 greyContainer">
       © 2021 Copyright:
       <a class="text-reset fw-bold" href="./index.html">Chez-Marine.com</a>
     </div>
